@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Notes App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+  <h1 class="title">📝 My Notes</h1>
+  <div>
+    <select id="sort-options">
+      <option value="newest">Sort: Newest</option>
+      <option value="oldest">Sort: Oldest</option>
+    </select>
+    <select id="filter-category">
+      <option value="all">All Categories</option>
+    </select>
+  </div>
+</header>
+
+  <main>
+    <div id="notes-container"></div>
+  </main>
+
+  <button id="new-note-btn">＋</button>
+
+  <!-- Modal -->
+<div id="note-modal" class="modal hidden">
+  <div class="modal-content">
+    <input type="text" id="note-title" placeholder="Title" />
+    <textarea id="note-body" placeholder="Write your note here..."></textarea>
+    <input type="text" id="note-category" placeholder="Category (e.g. Work, Ideas)" />
+    <div class="modal-actions">
+      <button id="save-note-btn">Save</button>
+      <button id="close-modal-btn">Cancel</button>
+    </div>
+  </div>
+</div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
